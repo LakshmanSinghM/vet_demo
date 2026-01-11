@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet Clinic Demo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 { color: #111827; }
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Paws & Claws Veterinary Clinic</h1>
+    <div class="content">
+        <h2>Welcome to our Online Portal</h2>
+        <p>We provide top-notch care for your furry friends. Use our chatbot in the bottom right corner to ask questions or book an appointment!</p>
+    </div>
+
+    <!-- Optional Context -->
+    <script>
+        window.VetChatbotConfig = {
+            userId: "user_999",
+            userName: "Alice Smith",
+            petName: "Max",
+            source: "demo-page"
+        };
+    </script>
+    
+    <!-- Chatbot Script -->
+    <script src="https://vet-chat-bot-integrate-anywhere.vercel.app/chatbot.js"></script>
+    <!-- <script src="../frontend/dist/chatbot.js"></script> -->
+</body>
+</html>
